@@ -23,10 +23,25 @@ public class SACHserviceImpl implements SACHservice {
         return sacHrepository.findAll();
     }
 
+//    @Override
+//    public List<Sach> GetJsonSach() {
+//        return sacHrepository.GetJsonSach();
+//    }
+
     @Override
     public List<SACH> SachTheoChuDe(int macd)
     {
         return sacHrepository.SachTheoChuDe(macd);
+    }
+
+    @Override
+    public List<SACH> SachTheoNXB(int manxb){
+        return sacHrepository.SachTheoNXB(manxb);
+    }
+
+    @Override
+    public Optional<SACH> DetailSach(int masach){
+        return sacHrepository.findById(masach);
     }
 
 }

@@ -24,8 +24,8 @@ public class SACH {
     @Column(name = "Ngaycapnhat")
     private String Ngaycapnhat;
 
-    @Column(name = "Soluongton",nullable = true)
-    private Integer Soluongton;
+    @Column(name = "Soluongton")
+    private int Soluongton;
 
     @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "MaNXB",referencedColumnName="MaNXB")
